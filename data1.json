@@ -1,0 +1,36 @@
+[
+	{
+		"project": "pggm",
+		"env": "dev",
+		"tenantcode": "pggm-pfzw",
+		"PurposeID": "Pension",
+		"ServiceUserName": "serviceUser",
+		"ServiceUserPassword" : "myServicePassword1!",
+		"SuperUsername": "admin",
+		"SuperUserPassword": "mySuperPassword0!"
+	},
+	{
+		"project": "pggm",
+		"env": "dev",
+		"tenantcode": "pggm-pme",
+		"PurposeID": "Pension",
+		"ServiceUserName": "serviceUser",
+		"ServiceUserPassword" : "myServicePassword1!",
+		"SuperUsername": "admin",
+		"SuperUserPassword": "mySuperPassword0!"
+	},
+	{
+		"project": "achmea",
+		"env": "dev",
+		"tenantcode": "achmea-achmea",
+		"PurposeID": "Pension",
+		"ServiceUserName": "serviceUser",
+		"ServiceUserPassword" : "myServicePassword1!",
+		"SuperUsername": "admin",
+		"SuperUserPassword": "mySuperPassword0!"
+		
+		
+	}
+	
+	
+]
