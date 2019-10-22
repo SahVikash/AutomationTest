@@ -1,5 +1,5 @@
 FROM postman/newman
-RUN npm install -g newman-reporter-htmlextra
+RUN npm install -g newman-reporter-html
 WORKDIR /app
 
 # Copy Postman Environment file
