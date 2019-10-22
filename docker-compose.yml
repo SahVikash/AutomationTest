@@ -11,7 +11,9 @@ services:
       run https://www.getpostman.com/collections/bd9af4efe8967ccdc9ff
       -e ./postman/env.json
       -d ./postman/data2V.json
-      --reporters cli,htmlextra,junit --reporter-junit
+      -r html,cli
+      --reporter-html-export ./postman/Restful_Booker_Test_Run.html
+      --reporter-html-template ./postman/templates/customTemplate.hbs
     networks:
       - cordfinance
     expose:
