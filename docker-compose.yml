@@ -11,6 +11,7 @@ services:
       run https://www.getpostman.com/collections/bd9af4efe8967ccdc9ff
       -e ./postman/env.json
       -d ./postman/data2V.json
+      --reporters cli,htmlextra,junit --reporter-junit
     networks:
       - cordfinance
     expose:
