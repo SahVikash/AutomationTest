@@ -1,7 +1,7 @@
-FROM postman/newman
-RUN npm install -g newman-reporter-html
-WORKDIR /app
+FROM node:10.11.0-alpine
 
-# Copy Postman Environment file
-COPY env.json postman/
-COPY data2V.json postman/
+RUN npm install -g newman newman-reporter-htmlextra
+
+WORKDIR /etc/newman
+
+ENTRYPOINT ["newman"]
