@@ -9,11 +9,12 @@ services:
         dockerfile: debug.Dockerfile
     command:
       run https://www.getpostman.com/collections/bd9af4efe8967ccdc9ff
-      -e ./postman/env.json
-      -d ./postman/data2V.json
-      -r html,cli
-      --reporter-html-export ./postman/Restful_Booker_Test_Run.html
-      --reporter-html-template ./postman/templates/customTemplate.hbs
+      -e environments/env.json
+      -d environments/data2V.json
+      -r htmlextra,cli 
+      --reporter-htmlextra-export reports/CFAPITestReport.html
+    volumes:
+        - ./src:/etc/newman
     networks:
       - cordfinance
     expose:
